@@ -26,7 +26,7 @@ const questions = [
 
 function FAQ() {
   return (
-    <section className="py-24 sm:py-28">
+    <section className="py-16 sm:py-24">
       <div className="container-page">
         <SectionHeader eyebrow="Perguntas frequentes" title="Dúvidas comuns antes de começar">
           Algumas informações podem ajudar você a chegar com mais tranquilidade ao
@@ -36,19 +36,19 @@ function FAQ() {
         <div className="mx-auto max-w-3xl space-y-5">
           {questions.map((item) => (
             <details
-              className="group rounded-3xl border border-clay/15 bg-white/65 p-6 shadow-sm sm:p-7"
+              className="group rounded-3xl border border-eucalyptus/20 bg-white/45 p-6 sm:p-7"
               key={item.question}
             >
-              <summary className="flex cursor-pointer list-none items-center justify-between gap-5 font-serif text-[1.72rem] leading-tight text-cocoa sm:text-[1.8rem]">
+              <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-5 rounded-sm text-base font-medium leading-relaxed text-deep sm:text-lg">
                 {item.question}
                 <ChevronDown
-                  className="shrink-0 text-olive transition group-open:rotate-180"
+                  className="shrink-0 text-deep transition group-open:rotate-180"
                   aria-hidden="true"
                   size={22}
                   strokeWidth={1.7}
                 />
               </summary>
-              <p className="mt-5 text-[1.08rem] leading-8 text-stone-600">{item.answer}</p>
+              <p className="mt-5 text-[1.08rem] leading-8 text-deep/85">{item.answer}</p>
             </details>
           ))}
         </div>

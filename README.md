@@ -1,16 +1,37 @@
-# React + Vite
+# Lydiane A. Procópio — Psicóloga Clínica
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page profissional em React, Vite e Tailwind CSS.
 
-Currently, two official plugins are available:
+- Produção: https://lydiane-procopio.pages.dev/
+- CRP: 06/188503
+- WhatsApp: https://wa.me/5519995222316
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Desenvolvimento e validação
 
-## React Compiler
+Instale as dependências com `npm ci` e inicie com `npm run dev`.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Antes de publicar, execute `npm run lint` e `npm run build`.
+Para conferir o build local, use `npm run preview`.
 
-## Expanding the ESLint configuration
+## Identidade visual e imagens
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Os arquivos oficiais em `public/brand/` devem ser preservados, sem redesenho,
+recoloração ou distorção. A paleta está definida em `src/index.css`.
+Os títulos usam Cormorant Garamond; a interface e os textos usam Inter.
+
+As fotos PNG originais são preservadas em `public/images/lydiane/`.
+A página utiliza cópias WebP otimizadas, nas mesmas dimensões, para reduzir
+o carregamento. Ao trocar uma foto, atualize também sua versão WebP.
+
+## Publicação
+
+O projeto existente na Cloudflare Pages está conectado ao GitHub.
+O push para `main` dispara a publicação automática. A saída do build é `dist/`.
+Não é necessário criar outra hospedagem ou alterar os domínios.
+
+Não envie credenciais, tokens, arquivos de ambiente, ZIPs ou arquivos temporários.
+
+## Compartilhamento
+
+O título, a descrição, o canonical e os metadados sociais estão em `index.html`.
+A imagem de compartilhamento usa temporariamente a logo oficial.

@@ -37,7 +37,7 @@ const cards = [
 
 function Help() {
   return (
-    <section id="como-posso-ajudar" className="py-24 sm:py-28">
+    <section id="como-posso-ajudar" className="py-16 sm:py-24">
       <div className="container-page">
         <SectionHeader eyebrow="Como posso te ajudar" title="Escuta para aquilo que pede cuidado">
           Cada pessoa chega ao consultório com uma história própria. O acompanhamento
@@ -47,11 +47,11 @@ function Help() {
 
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {cards.map(({ title, icon: Icon }) => (
-            <article className="soft-card rounded-3xl p-7 transition hover:-translate-y-1 hover:shadow-xl sm:p-8" key={title}>
-              <div className="mb-8 inline-flex h-12 w-12 items-center justify-center rounded-full bg-linen text-olive">
+            <article className="soft-card rounded-3xl p-7 sm:p-8" key={title}>
+              <div className="mb-8 inline-flex h-12 w-12 items-center justify-center rounded-full bg-soft-green text-deep">
                 <Icon aria-hidden="true" size={22} strokeWidth={1.55} />
               </div>
-              <h3 className="font-serif text-[1.78rem] leading-tight text-cocoa">{title}</h3>
+              <h3 className="font-serif text-[1.78rem] leading-tight text-deep">{title}</h3>
             </article>
           ))}
         </div>

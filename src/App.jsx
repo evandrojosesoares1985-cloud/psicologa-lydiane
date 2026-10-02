@@ -6,19 +6,24 @@ import Help from './sections/Help'
 import Hero from './sections/Hero'
 import Psychoanalysis from './sections/Psychoanalysis'
 import Services from './sections/Services'
+import Header from './components/Header'
 
 function App() {
   return (
-    <main className="overflow-hidden bg-stone-50 text-stone-800">
-      <Hero />
-      <Help />
-      <About />
-      <Psychoanalysis />
-      <Services />
-      <FAQ />
-      <FinalCTA />
+    <>
+      <a className="skip-link" href="#conteudo">Pular para o conteúdo</a>
+      <Header />
+      <main id="conteudo" tabIndex={-1}>
+        <Hero />
+        <Help />
+        <About />
+        <Psychoanalysis />
+        <Services />
+        <FAQ />
+        <FinalCTA />
+      </main>
       <Footer />
-    </main>
+    </>
   )
 }
 

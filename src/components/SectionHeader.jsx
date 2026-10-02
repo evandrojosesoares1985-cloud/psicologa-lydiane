@@ -6,7 +6,7 @@ function SectionHeader({ eyebrow, title, children, align = 'center' }) {
       {eyebrow ? <span className="eyebrow">{eyebrow}</span> : null}
       <h2 className="editorial-title text-4xl sm:text-5xl">{title}</h2>
       {children ? (
-        <p className="max-w-2xl text-[1.08rem] leading-8 text-stone-600 sm:text-xl sm:leading-9">{children}</p>
+        <p className="max-w-2xl text-[1.08rem] leading-8 text-deep/85 sm:text-xl sm:leading-9">{children}</p>
       ) : null}
     </div>
   )

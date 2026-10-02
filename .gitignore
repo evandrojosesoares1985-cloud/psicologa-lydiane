@@ -24,3 +24,11 @@ dist-ssr
 *.sw?
 
 .vercel
+
+# Credenciais e arquivos locais que não pertencem à publicação
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.zip

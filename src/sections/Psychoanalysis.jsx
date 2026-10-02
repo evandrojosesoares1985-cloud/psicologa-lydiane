@@ -3,7 +3,7 @@ import SectionHeader from '../components/SectionHeader'
 
 function Psychoanalysis() {
   return (
-    <section className="py-24 sm:py-28">
+    <section className="py-16 sm:py-24">
       <div className="container-page grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
         <div>
           <SectionHeader
@@ -16,13 +16,13 @@ function Psychoanalysis() {
             conflitos e construir novas formas de se posicionar diante da vida.
           </SectionHeader>
 
-          <div className="soft-card rounded-[30px] p-7 sm:p-9">
-            <Quote className="mb-6 text-gold-soft" aria-hidden="true" size={32} strokeWidth={1.4} />
-            <p className="font-serif text-[2rem] leading-tight text-cocoa sm:text-[2.65rem]">
+          <div className="soft-card rounded-3xl p-7 sm:p-9">
+            <Quote className="mb-6 text-deep" aria-hidden="true" size={32} strokeWidth={1.4} />
+            <p className="font-serif text-[2rem] leading-tight text-deep sm:text-[2.65rem]">
               Falar de si pode ser um caminho para escutar o que insiste, compreender
               o que se repete e criar novas possibilidades de elaboração.
             </p>
-            <p className="mt-6 text-[1.08rem] leading-8 text-stone-600 sm:text-xl sm:leading-9">
+            <p className="mt-6 text-[1.08rem] leading-8 text-deep/85 sm:text-xl sm:leading-9">
               O processo analítico acontece com delicadeza, sem julgamentos e sem
               promessas de soluções imediatas. Trata-se de uma travessia singular,
               sustentada pela ética, pela escuta e pelo cuidado.
@@ -30,10 +30,14 @@ function Psychoanalysis() {
           </div>
         </div>
 
-        <div className="image-frame overflow-hidden rounded-[30px]">
+        <div className="image-frame overflow-hidden rounded-3xl">
           <img
-            className="h-[440px] w-full object-cover object-[center_20%] sm:h-[560px]"
-            src="/images/lydiane/Psicanalise.png"
+            className="aspect-[1092/1440] w-full object-cover object-[center_20%] sm:max-h-[560px]"
+            src="/images/lydiane/Psicanalise.webp"
+            width="1092"
+            height="1440"
+            loading="lazy"
+            decoding="async"
             alt="Ambiente sereno representando a escuta em psicanálise"
           />
         </div>
