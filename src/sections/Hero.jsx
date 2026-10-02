@@ -4,7 +4,19 @@ import WhatsAppButton from '../components/WhatsAppButton'
 function Hero() {
   return (
     <section className="relative min-h-svh overflow-hidden">
-      <div className="container-page grid min-h-svh items-center gap-[4.5rem] py-12 sm:py-14 lg:grid-cols-[0.98fr_1.02fr] lg:py-16">
+      <header className="absolute inset-x-0 top-0 z-20">
+        <div className="container-page flex min-h-[76px] items-center justify-between gap-4 py-3 sm:min-h-[92px]">
+          <a className="shrink-0" href="#inicio" aria-label="Lydiane A. Procópio, início">
+            <img className="h-auto w-[148px] sm:w-[178px]" src="/brand/logo-lydiane.png" alt="Lydiane A. Procópio | Psicóloga Clínica" />
+          </a>
+          <nav aria-label="Navegação principal" className="flex items-center gap-3 sm:gap-6">
+            <a className="hidden text-sm font-medium text-cocoa transition hover:text-olive sm:inline" href="#como-posso-ajudar">Atendimentos</a>
+            <a className="hidden text-sm font-medium text-cocoa transition hover:text-olive sm:inline" href="#sobre">Sobre</a>
+            <a className="inline-flex min-h-10 items-center justify-center rounded-full border border-olive bg-olive px-4 text-sm font-semibold text-white transition hover:bg-[#50573d] sm:px-5" href="https://wa.me/5519995222316" target="_blank" rel="noreferrer">WhatsApp</a>
+          </nav>
+        </div>
+      </header>
+      <div id="inicio" className="container-page grid min-h-svh items-center gap-[4.5rem] py-28 sm:py-32 lg:grid-cols-[0.98fr_1.02fr] lg:py-36">
         <div className="min-w-0 max-w-3xl pt-14 lg:pt-0">
           <span className="eyebrow">Psicologia clínica</span>
           <h1 className="editorial-title mt-7 text-[3.78rem] sm:text-[4.75rem] lg:text-[7.15rem]">

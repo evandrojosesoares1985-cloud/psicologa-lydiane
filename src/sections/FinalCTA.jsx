@@ -5,6 +5,7 @@ function FinalCTA() {
     <section className="pb-24 sm:pb-28">
       <div className="container-page">
         <div className="relative overflow-hidden rounded-[36px] bg-cocoa/[0.78] px-6 py-16 text-center text-white shadow-2xl shadow-stone-900/10 sm:px-12 sm:py-20">
+          <img className="pointer-events-none absolute bottom-5 right-5 h-20 w-20 object-contain opacity-20 sm:bottom-8 sm:right-8 sm:h-28 sm:w-28" src="/brand/simbolo-lydiane.png" alt="" aria-hidden="true" />
           <img
             className="absolute inset-0 h-full w-full object-cover object-[center_35%] opacity-[0.42]"
             src="/images/lydiane/chamada-final.png"

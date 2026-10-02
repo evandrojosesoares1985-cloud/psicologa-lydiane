@@ -5,6 +5,7 @@ function Footer() {
     <footer className="border-t border-clay/15 bg-[#4a352a] py-11 text-white">
       <div className="container-page flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
         <div>
+          <img className="mb-5 h-auto w-[154px] sm:w-[176px]" src="/brand/logo-lydiane.png" alt="Lydiane A. Procópio | Psicóloga Clínica" />
           <p className="font-serif text-3xl">Lydiane A. Procópio</p>
           <p className="mt-2 text-[1.02rem] text-white/72">Psicóloga Clínica | CRP 06/188503</p>
         </div>
