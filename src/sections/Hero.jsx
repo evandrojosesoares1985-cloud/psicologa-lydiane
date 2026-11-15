@@ -39,15 +39,10 @@ function Hero() {
               <ArrowDown className="shrink-0 text-bronze" aria-hidden="true" size={18} strokeWidth={1.8} />
             </a>
           </div>
-
-          <div className="mt-8 flex items-center gap-3 text-sm text-deep/80">
-            <HeartHandshake className="shrink-0 text-bronze" aria-hidden="true" size={20} strokeWidth={1.6} />
-            <span>Atendimento sigiloso e ético regulamentado pelo Conselho Federal de Psicologia (CFP).</span>
-          </div>
         </div>
 
         <div className="min-w-0">
-          <div className="image-frame relative overflow-hidden rounded-3xl shadow-lg shadow-deep/5">
+          <div className="image-frame overflow-hidden rounded-3xl">
             <img
               className="hero-photo w-full object-cover object-[center_20%]"
               src="/images/lydiane/Hero.webp"
@@ -56,10 +51,12 @@ function Hero() {
               fetchPriority="high"
               alt="Retrato profissional de Lydiane A. Procópio, psicóloga clínica"
             />
-            <div className="absolute bottom-4 left-4 right-4 rounded-2xl bg-cream/90 backdrop-blur-md p-4 text-xs sm:text-sm text-deep shadow-sm border border-deep/10">
-              <p className="font-semibold text-deep">Consultório Presencial em Pirassununga</p>
-              <p className="text-deep/80">R. 13 de Maio, 1698 - Centro • Também online</p>
-            </div>
+          </div>
+          <div className="mt-5 flex items-start gap-3 text-deep/85">
+            <HeartHandshake className="mt-1 shrink-0 text-bronze" aria-hidden="true" size={22} strokeWidth={1.6} />
+            <p className="text-base leading-7">
+              Atendimento conduzido com sigilo, cuidado e responsabilidade ética.
+            </p>
           </div>
         </div>
       </div>
