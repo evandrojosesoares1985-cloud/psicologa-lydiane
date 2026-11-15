@@ -3,13 +3,13 @@ import { getWhatsAppUrl } from './WhatsAppButton'
 function Header() {
   return (
     <header id="inicio" className="sticky top-0 z-40 bg-cream/95 backdrop-blur-md border-b border-deep/5 transition-all">
-      <div className="container-page flex items-center justify-between gap-4 py-3 sm:py-4">
+      <div className="container-page flex items-center justify-between gap-4 py-3 sm:py-3.5">
         <a className="shrink-0 rounded-xl focus-visible:outline-offset-4" href="#inicio" aria-label="Lydiane A. Procópio, início">
           <img
-            className="h-10 sm:h-12 w-auto max-w-[210px] object-contain"
+            className="h-11 sm:h-13 md:h-14 w-auto max-w-[220px] sm:max-w-[270px] object-contain transition-transform hover:opacity-95"
             src="/brand/logo-horizontal-marfim.png"
-            width="2062"
-            height="672"
+            width="1793"
+            height="388"
             alt="Lydiane A. Procópio | Psicóloga Clínica"
           />
         </a>

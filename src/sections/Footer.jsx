@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone } from 'lucide-react'
+import { MapPin, Phone } from 'lucide-react'
 import { getWhatsAppUrl } from '../components/WhatsAppButton'
 
 function Footer() {
@@ -7,18 +7,17 @@ function Footer() {
       <div className="container-page flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
         <div className="max-w-md">
           <img
-            className="mb-5 h-11 sm:h-12 w-auto max-w-[220px] object-contain"
+            className="mb-3 h-13 sm:h-15 w-auto max-w-[260px] sm:max-w-[300px] object-contain"
             src="/brand/logo-horizontal-verde-escuro.png"
-            width="2062"
-            height="672"
+            width="1793"
+            height="388"
             loading="lazy"
             decoding="async"
             alt="Lydiane A. Procópio | Psicóloga Clínica"
           />
-          <p className="font-serif text-2xl sm:text-3xl font-semibold text-white">Lydiane A. Procópio</p>
-          <p className="mt-1 text-sm font-medium text-champagne">Psicóloga Clínica | CRP 06/188503</p>
+          <p className="text-sm font-medium text-champagne">CRP 06/188503 • Pirassununga - SP</p>
 
-          <div className="mt-5 space-y-2 text-sm text-cream/80">
+          <div className="mt-5 space-y-2.5 text-sm text-cream/80">
             <div className="flex items-start gap-2.5">
               <MapPin className="mt-0.5 shrink-0 text-champagne" size={17} />
               <span>R. 13 de Maio, 1698 — Centro, Pirassununga - SP, 13631-030</span>
