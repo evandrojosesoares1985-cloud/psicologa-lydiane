@@ -1,53 +1,65 @@
-import { ArrowDown, HeartHandshake } from 'lucide-react'
+import { ArrowDown, HeartHandshake, MapPin } from 'lucide-react'
 import WhatsAppButton from '../components/WhatsAppButton'
 
 function Hero() {
   return (
-    <section className="pb-16 pt-3 sm:pb-24 sm:pt-6">
-      <div className="container-page grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14">
+    <section className="pb-16 pt-4 sm:pb-24 sm:pt-8">
+      <div className="container-page grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-14">
         <div className="min-w-0 max-w-3xl">
-          <h1 className="editorial-title text-[3rem] sm:text-[4rem] lg:text-[4.5rem]">
+          <div className="inline-flex items-center gap-2 rounded-full border border-bronze/30 bg-soft-green/40 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-deep sm:text-sm">
+            <MapPin className="text-bronze" size={15} />
+            <span>Pirassununga - SP • Atendimentos Presenciais e Online</span>
+          </div>
+
+          <h1 className="editorial-title mt-5 text-[2.75rem] leading-[1.05] sm:text-[3.75rem] lg:text-[4.25rem]">
             Lydiane A. Procópio
           </h1>
-          <p className="mt-5 text-base font-semibold text-deep sm:text-lg">
+
+          <p className="mt-4 text-base font-medium text-bronze sm:text-lg">
             Psicóloga Clínica | CRP 06/188503
           </p>
-          <p className="mt-6 max-w-2xl font-serif text-[1.9rem] leading-tight text-deep sm:text-[2.35rem]">
+
+          <p className="mt-6 max-w-2xl font-serif text-[1.8rem] leading-snug text-deep sm:text-[2.2rem]">
             Um espaço seguro, ético e acolhedor para falar sobre você.
           </p>
-          <p className="mt-5 max-w-2xl text-base leading-7 text-deep/85 sm:text-lg sm:leading-8">
-            Atendimento psicológico presencial e online, com escuta sensível para
-            processos de autoconhecimento, questões emocionais, relacionamentos,
-            autoestima, ansiedade e sofrimento psíquico.
+
+          <p className="mt-5 max-w-2xl text-base leading-relaxed text-deep/85 sm:text-lg sm:leading-8">
+            Atendimento psicológico presencial no centro de Pirassununga e online para todo o Brasil.
+            Escuta atenta e sensível para processos de autoconhecimento, questões emocionais,
+            relacionamentos, autoestima, ansiedade e sofrimento psíquico orientada pela psicanálise.
           </p>
-          <div className="mt-7 flex flex-col items-start gap-3">
-            <WhatsAppButton />
+
+          <div className="mt-8 flex flex-col items-stretch gap-4 sm:flex-row sm:items-center">
+            <WhatsAppButton message="Olá, Lydiane! Visitei seu site e gostaria de agendar uma consulta." />
             <a
               href="#como-posso-ajudar"
-              className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full px-5 text-center text-base font-medium text-deep transition-colors hover:bg-soft-green sm:w-auto"
+              className="inline-flex min-h-14 items-center justify-center gap-2 rounded-full border border-deep/15 bg-white/60 px-6 text-center text-base font-medium text-deep transition-all hover:bg-soft-green sm:w-auto"
             >
-              Conhecer minha atuação
-              <ArrowDown className="shrink-0" aria-hidden="true" size={18} strokeWidth={1.8} />
+              <span>Conhecer atuação</span>
+              <ArrowDown className="shrink-0 text-bronze" aria-hidden="true" size={18} strokeWidth={1.8} />
             </a>
+          </div>
+
+          <div className="mt-8 flex items-center gap-3 text-sm text-deep/80">
+            <HeartHandshake className="shrink-0 text-bronze" aria-hidden="true" size={20} strokeWidth={1.6} />
+            <span>Atendimento sigiloso e ético regulamentado pelo Conselho Federal de Psicologia (CFP).</span>
           </div>
         </div>
 
         <div className="min-w-0">
-          <div className="image-frame overflow-hidden rounded-3xl">
+          <div className="image-frame relative overflow-hidden rounded-3xl shadow-lg shadow-deep/5">
             <img
               className="hero-photo w-full object-cover object-[center_20%]"
               src="/images/lydiane/Hero.webp"
               width="1122"
               height="1402"
               fetchPriority="high"
-              alt="Retrato profissional de Lydiane A. Procópio"
+              alt="Retrato profissional de Lydiane A. Procópio, psicóloga clínica"
             />
-          </div>
-          <div className="mt-5 flex items-start gap-3 text-deep/85">
-            <HeartHandshake className="mt-1 shrink-0 text-deep" aria-hidden="true" size={22} strokeWidth={1.6} />
-            <p className="text-base leading-7">
-              Atendimento conduzido com sigilo, cuidado e responsabilidade ética.
-            </p>
+            <div className="absolute bottom-4 left-4 right-4 rounded-2xl bg-cream/90 backdrop-blur-md p-4 text-xs sm:text-sm text-deep shadow-sm border border-deep/10">
+              <p className="font-semibold text-deep">Consultório Presencial em Pirassununga</p>
+              <p className="text-deep/80">R. 13 de Maio, 1698 - Centro • Também online</p>
+            </div>
           </div>
         </div>
       </div>

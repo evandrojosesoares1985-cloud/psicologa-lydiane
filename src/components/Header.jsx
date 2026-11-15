@@ -1,14 +1,40 @@
+import { getWhatsAppUrl } from './WhatsAppButton'
+
 function Header() {
   return (
-    <header id="inicio">
-      <div className="container-page flex items-center justify-between gap-4 py-2">
-        <a className="shrink-0 rounded-xl" href="#inicio" aria-label="Lydiane A. Procópio, início">
-          <img className="h-auto w-[132px] sm:w-[160px]" src="/brand/logo-lydiane.png" width="1254" height="1254" alt="Lydiane A. Procópio | Psicóloga Clínica" />
+    <header id="inicio" className="sticky top-0 z-40 bg-cream/95 backdrop-blur-md border-b border-deep/5 transition-all">
+      <div className="container-page flex items-center justify-between gap-4 py-3 sm:py-4">
+        <a className="shrink-0 rounded-xl focus-visible:outline-offset-4" href="#inicio" aria-label="Lydiane A. Procópio, início">
+          <img
+            className="h-10 sm:h-12 w-auto max-w-[210px] object-contain"
+            src="/brand/logo-horizontal-marfim.png"
+            width="2062"
+            height="672"
+            alt="Lydiane A. Procópio | Psicóloga Clínica"
+          />
         </a>
+
         <nav aria-label="Navegação principal" className="flex flex-wrap items-center justify-end gap-x-5 gap-y-2 sm:gap-x-7">
-          <a className="hidden min-h-11 items-center text-base font-medium text-deep transition-colors hover:underline sm:inline-flex" href="#atendimentos">Atendimentos</a>
-          <a className="hidden min-h-11 items-center text-base font-medium text-deep transition-colors hover:underline sm:inline-flex" href="#sobre">Sobre</a>
-          <a className="inline-flex min-h-11 items-center justify-center rounded-full bg-deep px-5 text-base font-semibold text-cream transition-colors hover:bg-deep/90" href="https://wa.me/5519995222316" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          <a className="hidden min-h-11 items-center text-sm font-medium text-deep transition-colors hover:text-bronze md:inline-flex" href="#como-posso-ajudar">
+            Como posso ajudar
+          </a>
+          <a className="hidden min-h-11 items-center text-sm font-medium text-deep transition-colors hover:text-bronze sm:inline-flex" href="#sobre">
+            Sobre
+          </a>
+          <a className="hidden min-h-11 items-center text-sm font-medium text-deep transition-colors hover:text-bronze sm:inline-flex" href="#atendimentos">
+            Atendimentos
+          </a>
+          <a className="hidden min-h-11 items-center text-sm font-medium text-deep transition-colors hover:text-bronze lg:inline-flex" href="#duvidas">
+            Dúvidas
+          </a>
+          <a
+            className="inline-flex min-h-10 items-center justify-center rounded-full bg-deep px-5 text-sm font-semibold text-cream shadow-sm transition-all hover:bg-deep/90 hover:shadow"
+            href={getWhatsAppUrl('Olá, Lydiane! Gostaria de agendar um atendimento.')}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Falar no WhatsApp
+          </a>
         </nav>
       </div>
     </header>

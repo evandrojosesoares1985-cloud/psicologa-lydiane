@@ -12,25 +12,25 @@ function Psychoanalysis() {
             align="left"
           >
             A psicanálise propõe um espaço de fala e escuta em que o sujeito pode
-            se aproximar de sua própria história, reconhecer repetições, elaborar
-            conflitos e construir novas formas de se posicionar diante da vida.
+            se aproximar de sua própria história, reconhecer repetições inconscientes,
+            elaborar conflitos e construir novas formas de se posicionar diante da vida.
           </SectionHeader>
 
           <div className="soft-card rounded-3xl p-7 sm:p-9">
-            <Quote className="mb-6 text-deep" aria-hidden="true" size={32} strokeWidth={1.4} />
-            <p className="font-serif text-[2rem] leading-tight text-deep sm:text-[2.65rem]">
+            <Quote className="mb-6 text-bronze" aria-hidden="true" size={32} strokeWidth={1.4} />
+            <p className="font-serif text-[1.85rem] leading-snug text-deep sm:text-[2.35rem]">
               Falar de si pode ser um caminho para escutar o que insiste, compreender
               o que se repete e criar novas possibilidades de elaboração.
             </p>
-            <p className="mt-6 text-[1.08rem] leading-8 text-deep/85 sm:text-xl sm:leading-9">
+            <p className="mt-6 text-base leading-relaxed text-deep/85 sm:text-lg sm:leading-8">
               O processo analítico acontece com delicadeza, sem julgamentos e sem
-              promessas de soluções imediatas. Trata-se de uma travessia singular,
-              sustentada pela ética, pela escuta e pelo cuidado.
+              promessas de soluções mágicas imediatas. Trata-se de uma travessia singular,
+              sustentada pela ética, pela escuta cuidadosa e pela responsabilidade clínica.
             </p>
           </div>
         </div>
 
-        <div className="image-frame overflow-hidden rounded-3xl">
+        <div className="image-frame overflow-hidden rounded-3xl shadow-sm">
           <img
             className="aspect-[1092/1440] w-full object-cover object-[center_20%] sm:max-h-[560px]"
             src="/images/lydiane/Psicanalise.webp"

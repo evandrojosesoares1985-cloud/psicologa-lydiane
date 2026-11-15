@@ -3,12 +3,14 @@
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-serif: "Cormorant Garamond", Georgia, serif;
-  --color-cream: #F6F3EC;
-  --color-soft-green: #DCE7DD;
-  --color-sage: #A6B59E;
+  --color-cream: #FAF7F2;
+  --color-soft-green: #D9E5D5;
+  --color-sage: #9FB192;
   --color-eucalyptus: #8FA48F;
-  --color-champagne: #EBD9B7;
-  --color-deep: #405348;
+  --color-champagne: #F3D7AA;
+  --color-bronze: #8C6239;
+  --color-deep: #344F43;
+  --color-dark-green: #244336;
 }
 
 * { box-sizing: border-box; }
@@ -49,18 +51,25 @@ svg { flex-shrink: 0; }
 }
 
 .soft-card {
-  border: 1px solid rgb(143 164 143 / 22%);
-  background: rgb(255 255 255 / 45%);
+  border: 1px solid rgb(52 79 67 / 12%);
+  background: rgb(255 255 255 / 75%);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.soft-card:hover {
+  transform: translateY(-2px);
+  border-color: rgb(140 98 57 / 30%);
+  box-shadow: 0 10px 25px -5px rgb(52 79 67 / 8%);
 }
 
 .image-frame { background: var(--color-soft-green); }
 .hero-photo { aspect-ratio: 1122 / 1402; }
 
 .eyebrow {
-  color: var(--color-deep);
+  color: var(--color-bronze);
   font-size: 0.85rem;
   font-weight: 600;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
